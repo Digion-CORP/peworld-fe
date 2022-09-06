@@ -73,7 +73,7 @@ yarn dev / nodemon
 ## Screenshots
 
   
-<div  align="center">
+<div  align="start">
 <img  width="350"  src="https://github.com/teach-me-project/DailyNews_BE/blob/main/WhatsApp%20Image%202022-07-26%20at%2010.45.26.jpeg">
 
 

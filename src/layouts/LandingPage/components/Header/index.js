@@ -21,27 +21,27 @@ const Header = () => {
     <div className="container">
       <div className={`${styles.header} row`}>
         <div className={`${styles.left} col-md-6`}>
-          <h1 data-aos="fade-right" data-aos-delay="300" data-aos-duration="700">Talenta terbaik negeri untuk perubahan revolusi 4.0</h1>
-          <p data-aos="fade-right" data-aos-delay="400" data-aos-duration="700">
+          <h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="2000">Talenta terbaik negeri untuk perubahan revolusi 4.0</h1>
+          <p data-aos="fade-up" data-aos-delay="400" data-aos-duration="2000">
             Temukan developer berbakat dan terbaik di berbagai bidang keahlian
           </p>
           {role == 'perekrut' ? (
-            <button onClick={rutePerekrut} data-aos="fade-right" data-aos-delay="600" data-aos-duration="700">Mulai Dari Sekarang</button>
+            <button onClick={rutePerekrut} data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000">Mulai Dari Sekarang</button>
           ) : (
             <>
               {role == 'pekerja' ? (
                 <>
-                  <button onClick={rutePekerja} data-aos="fade-right" data-aos-delay="600" data-aos-duration="700">Mulai Dari Sekarang</button>
+                  <button onClick={rutePekerja} data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000">Mulai Dari Sekarang</button>
                 </>
               ) : (
                 <>
-                  <button onClick={ruteNotLogin} data-aos="fade-right" data-aos-delay="600" data-aos-duration="700">Mulai Dari Sekarang</button>
+                  <button onClick={ruteNotLogin} data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000">Mulai Dari Sekarang</button>
                 </>
               )}
             </>
           )}
         </div>
-        <div className={`${styles.right} col-md-6`} data-aos="fade-left" data-aos-delay="1000" data-aos-duration="700">
+        <div className={`${styles.right} col-md-6`} data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">
           <img src="/images/img3.png" alt="" />
         </div>
       </div>

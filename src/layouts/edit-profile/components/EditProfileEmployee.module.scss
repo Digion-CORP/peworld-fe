@@ -1,0 +1,24 @@
+.wrapPage {
+  background-color: #ebedf0;
+  // margin-top: 5em;
+  .wrapHead {
+    background-color: #5e50a1;
+    height: 250px;
+  }
+
+  .leftCard {
+    margin-top: -10em;
+  }
+
+  .cardForm {
+    padding-left: 0.8em;
+    margin-top: -5em;  
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapPage {
+    .cardForm {
+      margin-top: 2em;
+    }
+  }
+}

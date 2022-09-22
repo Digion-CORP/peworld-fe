@@ -1,0 +1,149 @@
+.profileLayout {
+  width: 100%;
+  padding-top: 3em;
+  background: #e5e5e5;
+  padding-bottom: 5em;
+
+  &::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    background-color: var(--primary);
+    height: 50vh;
+  }
+
+  .portofolio {
+    margin-top: 5em;
+    border-radius: 5px;
+    padding: 2em;
+    position: relative;
+    width: 100%;
+    background: #fff;
+
+    .portoTitle {
+      display: flex;
+      column-gap: 2em;
+
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(175, 174, 174, 0.795);
+        cursor: pointer;
+      }
+      h3.active {
+        color: #222;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 80%;
+          margin: auto;
+          padding-top: 10px;
+          border-bottom: 3px solid var(--primary);
+          margin-bottom: -11px;
+        }
+      }
+    }
+    .listPorto {
+      display: flex;
+      margin-top: 2.5em;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2em 0.5em;
+
+      .portoCard {
+        cursor: pointer;
+        border-bottom: 3px solid var(--primary);
+        transition: transform 350ms;
+        width: 200px;
+        height: 300px;
+
+        &:hover {
+          transform: scale(1.1);
+          background: var(--primary);
+
+          p {
+            color: #fff;
+            font-weight: 500;
+          }
+        }
+
+        .portoImg {
+          width: 200px;
+          height: 150px;
+          img {
+            width: 200px;
+            height: 240px;
+            object-fit: cover;
+          }
+          p {
+            margin-top: 1em;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .experience {
+      margin-top: 2em;
+
+      .expDetails {
+        padding: 1em;
+        display: flex;
+
+        .expImage {
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+
+        .expInfo {
+          margin-left: 1em;
+          h3 {
+            font-size: 20px;
+            font-weight: 600;
+          }
+          h4 {
+            margin: 0.5em 0;
+            font-size: 14px;
+            font-weight: 500;
+          }
+          h5 {
+            font-size: 13px;
+            font-weight: 500;
+            color: rgb(161, 161, 161);
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profileLayout {
+    .portofolio {
+      padding: 2em 0;
+      .portoTitle {
+        display: flex;
+        justify-content: space-evenly;
+
+        h3 {
+          font-size: 20px;
+        }
+      }
+      .listPorto {
+        gap: 1em;
+        padding: 0 0.5em;
+        justify-content: center;
+        .portoCard {
+          margin-top: 2em;
+        }
+      }
+    }
+  }
+}

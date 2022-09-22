@@ -8,7 +8,7 @@ const WhyUs = () => {
             <div className={`${styles.left} col-md-6`} data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000">
                 <img src="images/img1.png" alt="logo" />
             </div>
-            <div className={`${styles.right} col-md-6`} data-aos="fade-left" data-aos-delay="600" data-aos-duration="2000">
+            <div className={`${styles.right} col-md-6`} data-aos="fade-up" data-aos-delay="900" data-aos-duration="2000">
                 <h1>Kenapa harus mencari talent di Peworld?</h1>
                 <div className={styles.detailsBox}>
                     <div className={styles.details}>

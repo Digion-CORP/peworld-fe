@@ -105,13 +105,6 @@ const Hiring = ({ data }) => {
 
 								)
 							})}
-							<div className={styles.subject}>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-									euismod
-									<br /> ipsum et dui rhoncus auctor.
-								</p>
-							</div>
 							<div className={styles.message}>
 								<form onSubmit={handleMessage}>
 									<div className={styles.messageForm}>
@@ -120,10 +113,9 @@ const Hiring = ({ data }) => {
 											className='form-select'
 											aria-label='Default select example'
 										>
-											<option selected>Projek</option>
-											<option defaultValue='1'>One</option>
-											<option defaultValue='2'>Two</option>
-											<option defaultValue='3'>Three</option>
+											<option selected>Collaboration</option>
+											<option defaultValue='1'>Long term agreement</option>
+											<option defaultValue='2'>Short term agreement</option>
 										</select>
 									</div>
 									<div className={styles.messageForm}>

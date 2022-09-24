@@ -9,7 +9,7 @@ const GetStarted = () => {
     <div className="container">
       <div className={styles.getStarted}>
         <div className={styles.gsInfo}>
-          <h1>Lorem ipsum dolor sit amet</h1>
+          <h1>Temukan developer berbakat dan terbaik di berbagai bidang keahlian</h1>
         </div>
         <div className={styles.gsButton}>
           <button>Mulai Dari Sekarang</button>

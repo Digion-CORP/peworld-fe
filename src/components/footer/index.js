@@ -9,7 +9,7 @@ const Footer = () => {
         <div className={styles.logo}>
           <Link href='/#'>
             <picture><img src="/logo/logowhite.svg" alt="" /></picture></Link>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod ipsum et dui rhoncus auctor.</p>
+          <p>Talenta terbaik negeri untuk perubahan revolusi 4.0</p>
         </div>
         <div className={styles.bottom}>
           <div className={styles.copyright}>2020 Peworld. All right reserved</div>

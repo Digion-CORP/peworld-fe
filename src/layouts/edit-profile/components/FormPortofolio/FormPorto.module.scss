@@ -22,6 +22,47 @@
     }
   }
 
+  .portoBox {
+    margin-left: 1em;
+    h2 {
+      font-size: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: #444;
+      font-size: 14px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .buttonPanel {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+    button {
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      outline: none;
+      border: none;
+      background: rgb(34, 34, 237);
+
+      &:nth-child(2) {
+        background: red;
+      }
+
+      .icon {
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+    
+  }
+
   .portofolioForm {
     display: flex;
     flex-direction: column;

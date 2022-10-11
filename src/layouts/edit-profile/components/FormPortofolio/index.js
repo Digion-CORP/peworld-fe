@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Cookies from 'js-cookie';
 import { useDispatch } from 'react-redux';
 import { DeletePortofolio } from '../../../../redux/actions/portofolio';
+import { RiDeleteBin6Line, RiEditLine } from 'react-icons/ri'
 
 const FormPortofolio = (data) => {
 	const dispatch = useDispatch();
@@ -15,11 +16,11 @@ const FormPortofolio = (data) => {
 	const dataporto = data.data.data.data.dataporto.data;
 
 	// console.log(dataporto, 'ini data porto');
-	// const handledelete = (profile_id, portofolio_id, token, portofolio_name) => {
-	// 	if (window.confirm(`${portofolio_name} Akan Dihapus ?`)) {
-	// 		dispatch(DeletePortofolio(profile_id, portofolio_id, token));
-	// 	}
-	// };
+	const handledelete = (profile_id, portofolio_id, token, portofolio_name) => {
+		if (window.confirm(`${portofolio_name} Akan Dihapus ?`)) {
+			dispatch(DeletePortofolio(profile_id, portofolio_id, token));
+		}
+	};
 
 	console.log(dataporto, 'isi portonya');
 
@@ -44,15 +45,42 @@ const FormPortofolio = (data) => {
 						return (
 							<>
 								<div className='mb-3 col-12 d-flex'>
-									<div className='col-9'>
-										<div className='porto-name'>{item.portofolio_name}</div>
-										<div className='porto-repo'>
-											<Link href={item.portofolio_repo}>
-												<a>{item.portofolio_repo}</a>
-											</Link>
+									<div className='col-9 d-flex justify-content-between align-items-center w-100'>
+										<div className="d-flex align-items-center w-100">
+											<div className='col-3 d-flex justify-content-center pt-4'>
+												<img
+													className='col-12 '
+													// loader={myLoader(item.product_picture)}
+													src={`http://localhost:5000/uploads/${item.portofolio_picture}`}
+													width={'100'}
+													height={'100'}
+												/>
+											</div>
+											<div className={styles.portoBox}>
+												<h2 className='porto-name'>{item.portofolio_name}</h2>
+												<Link href={item.portofolio_repo}>
+													<a>{item.portofolio_repo}</a>
+												</Link>
+											</div>
 										</div>
-										<div className='col-12 d-flex pt-2'>
-											<button
+										<div className={styles.buttonPanel}>
+											<button onClick={() => handleEdit()}
+												data-bs-toggle='modal'
+												data-bs-target='#editPorto'><RiEditLine className={styles.icon}/></button>
+											<button onClick={() => {
+													handledelete(
+														profile_id,
+														item.portofolio_id,
+														token,
+														item.portofolio_name
+													);
+													alert(
+														item.profile_id,
+														item.portofolio_id,
+														item.portofolio_name
+													);
+												}}><RiDeleteBin6Line className={styles.icon}/></button>
+											{/* <button
 												className=' btn btn-outline-success col-4 me-3'
 												onClick={() => handleEdit()}
 												data-bs-toggle='modal'
@@ -77,18 +105,10 @@ const FormPortofolio = (data) => {
 												}}
 											>
 												Delete
-											</button>
+											</button> */}
 										</div>
 									</div>
-									<div className=' col-3 d-flex justify-content-center pt-4'>
-										<img
-											className='col-12 '
-											// loader={myLoader(item.product_picture)}
-											src={`http://localhost:5000/uploads/${item.portofolio_picture}`}
-											width={'100'}
-											height={'100'}
-										/>
-									</div>
+									
 								</div>
 							</>
 						);
@@ -131,7 +151,7 @@ const FormPortofolio = (data) => {
 					<div className='modal-content'>
 						<div className='modal-header'>
 							<h5 className='modal-title' id='editPortoLabel'>
-								Edit Skill
+								Edit Portofolio
 							</h5>
 							<button
 								type='button'

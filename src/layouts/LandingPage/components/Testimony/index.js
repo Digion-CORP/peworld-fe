@@ -57,8 +57,7 @@ const Testimony = () => {
               <h2>Harry Styles</h2>
               <h3>Web Developer</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                euismod ipsum et dui rhoncus auctor.
+                Excelent work!
               </p>
             </div>
           </div>
@@ -68,8 +67,8 @@ const Testimony = () => {
             </div>
             <div className={styles.userDetails}>
               <h2>Niall Horan</h2>
-              <h3>Web Developer</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3>Frontend Developer</h3>
+              <p>Good Job 👍</p>
             </div>
           </div>
           <div className={styles.testiCard} data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000">
@@ -78,8 +77,8 @@ const Testimony = () => {
             </div>
             <div className={styles.userDetails}>
               <h2>Louis Tomlinson</h2>
-              <h3>Web Developer</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur</p>
+              <h3>Fullstack Developer</h3>
+              <p>Wow! Amazing work</p>
             </div>
           </div>
           <div className={styles.testiCard} data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000">
@@ -88,8 +87,8 @@ const Testimony = () => {
             </div>
             <div className={styles.userDetails}>
               <h2>Louis Tomlinson</h2>
-              <h3>Web Developer</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur</p>
+              <h3>Backend Developer</h3>
+              <p>Excelent Work!</p>
             </div>
           </div>
         </Slider>
